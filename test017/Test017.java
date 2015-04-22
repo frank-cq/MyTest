@@ -30,7 +30,7 @@ public class Test017 {
         if (temp[firstSingleChar].getFreq() != 1){
             temp[firstSingleChar].setIndex(Integer.MAX_VALUE);
         }
-        //遍历255个位置，搜索第一个只出现一次的字符
+        //遍历256个位置，搜索第一个只出现一次的字符
         for (int i = 0; i < 256; i++){
             if (temp[i].getFreq() == 1 && temp[i].getIndex() < temp[firstSingleChar].getIndex()){
                 firstSingleChar = i;
