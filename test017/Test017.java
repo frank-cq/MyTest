@@ -10,8 +10,8 @@ public class Test017 {
             return;
         }
 
-        SpecifiedInteger[] temp = new SpecifiedInteger[255];
-        for (int i = 0; i < 255; i++){
+        SpecifiedInteger[] temp = new SpecifiedInteger[256];
+        for (int i = 0; i < 256; i++){
             temp[i] = new SpecifiedInteger();
         }
 
@@ -30,7 +30,7 @@ public class Test017 {
             temp[firstSingleChar].setIndex(Integer.MAX_VALUE);
         }
         //遍历255个位置，搜索第一个只出现一次的字符
-        for (int i = 0; i < 255; i++){
+        for (int i = 0; i < 256; i++){
             if (temp[i].getFreq() == 1 && temp[i].getIndex() < temp[firstSingleChar].getIndex()){
                 firstSingleChar = i;
             }
