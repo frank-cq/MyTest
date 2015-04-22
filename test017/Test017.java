@@ -10,6 +10,7 @@ public class Test017 {
             return;
         }
 
+        //假设字符编码为ASCII，则总共只有256个
         SpecifiedInteger[] temp = new SpecifiedInteger[256];
         for (int i = 0; i < 256; i++){
             temp[i] = new SpecifiedInteger();
