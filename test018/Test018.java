@@ -9,7 +9,7 @@ package test018;
 public class Test018 {
     public static int deleteMthNum(int[] arr, int m){
         if (arr == null){
-            return Integer.MAX_VALUE;
+            return -1;
         }
 
         int fnIndex = 0;
