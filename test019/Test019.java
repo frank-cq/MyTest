@@ -45,6 +45,9 @@ public class Test019 {
 
     //矩阵递归方法，无重复计算，根据计算公式：（f(n),f(n-1))^T = A^(n-1) * (1,0)^T
     public static int sumFibMatrix(int n){
+        if (n < 0){
+            return -1;
+        }
         int[] matrix = {1,1,1,0};
         matrixPower(matrix,n-1);
         return matrix[0];
