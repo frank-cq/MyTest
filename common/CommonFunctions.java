@@ -20,4 +20,22 @@ public class CommonFunctions {
     public static BTNode initBTree(int[] arr){
         return null;
     }
+
+    //打印数组
+    public static <T> void printPartArray(T[] array, int maxIndex){
+        for (int i=0; i<=maxIndex; i++){
+            if (array[i] != null){
+                System.out.print(array[i]+" ");
+            }
+        }
+        System.out.println();
+    }
+
+    //打印数组
+    public static <T> void printArray(T[] array){
+        for (T t : array){
+            System.out.print(t + " ");
+        }
+        System.out.println();
+    }
 }
