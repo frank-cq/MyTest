@@ -38,4 +38,13 @@ public class CommonFunctions {
         }
         System.out.println();
     }
+
+    //打印链表
+    public static void printList(Node list){
+        while (list != null){
+            System.out.print(list.getData()+" ");
+            list = list.getNext();
+        }
+        System.out.println();
+    }
 }
