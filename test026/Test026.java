@@ -30,15 +30,17 @@ public class Test026 {
     //翻转字符数组中的一部分
     public static void reverseCharArr(char[] charArr, int head, int tail){
         while (head < tail){
-            charArr[head] ^= charArr[tail];
-            charArr[tail] ^= charArr[head];
-            charArr[head] ^= charArr[tail];
+            if (charArr[head] != charArr[tail]){
+                charArr[head] ^= charArr[tail];
+                charArr[tail] ^= charArr[head];
+                charArr[head] ^= charArr[tail];
+            }
             head++;
             tail--;
         }
     }
 
     public static void main(String[] args){
-        System.out.println("将字符串 abcdef 旋转2位后得："+rotateSentence("abcdef",2));
+        System.out.println("将字符串 abcdef 左旋转2位后得："+rotateSentence("abcdef",2));
     }
 }
