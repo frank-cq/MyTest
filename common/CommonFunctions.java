@@ -47,4 +47,18 @@ public class CommonFunctions {
         }
         System.out.println();
     }
+
+    //简单整数的乘方
+    public static int pow(int n, int power){
+        int result = 1;
+        if (n < 0 || power < 1){
+            return result;
+        }
+
+        while (power > 0){
+            result *= n;
+            power--;
+        }
+        return result;
+    }
 }
